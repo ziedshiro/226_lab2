@@ -5,7 +5,7 @@ int main()
     int n;
     scanf("%c",&x);
     scanf("%d",&n);
-        if(x>='A'&&x<='I')
+                if(x>='A'&&x<='I')
     {
         if(n%10==5)
             printf("\\");
@@ -21,4 +21,36 @@ int main()
             printf("/");
 
     }
+    else if(x>='J'&&x<='R')
+    {
+        if(n%10==5)
+            printf("\\");
+            if(n%2==0)
+            {
+            printf("{*v*}");
+            }
+            else
+            {
+            printf("(*o*)");
+            }
+        if(n%10==5)
+            printf("/");
+    }
+    else if(x>='S'&&x<='Z')
+    {
+        if(n%10==5)
+            printf("\\");
+            if(n%2==0)
+            {
+            printf("{x_x}");
+            }
+            else
+            {
+            printf("(T_T)");
+            }
+        if(n%10==5)
+            printf("/");
+    }
+
+
 }
