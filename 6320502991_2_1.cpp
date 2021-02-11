@@ -2,26 +2,31 @@
 using namespace std;
 int main()
 {
-    int a,b,c;
+    int a,b,c,x;
     cin>>a;
        cin>>b;
           cin>>c;
-              if(a+b+c>=80&&a+b+c<=100)
+          x=a+b+c;
+          if((a>=0&&a<=30)&&(b>=0&&b<=30)&&(c>=0&&c<=40))
+          {
+              if(x>=80&&x<=100)
                 cout<<"A";
-              else if(a+b+c>=75&&a+b+c<=79)
+              else if(x>=75&&x<=79)
                 cout<<"B+";
-              else if(a+b+c>=70&&a+b+c<=74)
+              else if(x>=70&&x<=74)
                 cout<<"B";
-              else if(a+b+c>=65&&a+b+c<=69)
+              else if(x>=65&&x<=69)
                 cout<<"C+";
-                else if(a+b+c>=60&&a+b+c<=64)
+                else if(x>=60&&x<=64)
                 cout<<"C";
-                else if(a+b+c>=55&&a+b+c<=59)
+                else if(x>=55&&x<=59)
                 cout<<"D+";
-                else if(a+b+c>=50&&a+b+c<=54)
+                else if(x>=50&&x<=54)
                 cout<<"D";
-                else if(a+b+c>=0&&a+b+c<=49)
+                else if(x>=0&&x<=49)
                 cout<<"F";
+          }
+
 
 
 }
