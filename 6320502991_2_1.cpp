@@ -4,14 +4,8 @@ int main()
 {
     int a,b,c;
     cin>>a;
-    if(a>=0&&a<=30)
-    {
        cin>>b;
-       if(b>=0&&b<=30)
-       {
           cin>>c;
-          if(c>=0&&c<=40)
-          {
               if(a+b+c>=80&&a+b+c<=100)
                 cout<<"A";
               else if(a+b+c>=75&&a+b+c<=79)
@@ -28,11 +22,6 @@ int main()
                 cout<<"D";
                 else if(a+b+c>=0&&a+b+c<=49)
                 cout<<"F";
-          }
-       }
-
-    }
-
 
 
 }
