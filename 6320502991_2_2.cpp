@@ -5,7 +5,8 @@ int main()
 {
     char n;
     cin>>n;
-    double N,x,a;
+    double N,a;
+    int x;
     cin>>N;
     if(n=='A')
     {
@@ -14,8 +15,8 @@ int main()
         else
         {
             x=N-200;
-            a=199+ceil(x*3);
-                cout<<double(a);
+            a=(((N-200-x)*3)/60)*100;
+                cout<<199+(x*3)+a;
         }
     }
     else if(n=='B')
@@ -25,8 +26,8 @@ int main()
         else
         {
             x=N-400;
-            a=299+ceil(x*2);
-                cout<<double(a);
+            a=(((N-400-x)*2)/60)*100;
+                cout<<299+(x*2)+a;
         }
     }
 }
