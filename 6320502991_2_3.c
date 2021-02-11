@@ -4,8 +4,8 @@ int main()
    int j,i,n[3],a;
    for(i=0;i<3;i++)
         scanf("%d",&n[i]);
-   char x;
-   scanf("%c",&a);
+   char x[3];
+
    for(j=0;j<3;j++)
    for(i=0;i<3;i++)
     {
@@ -16,8 +16,8 @@ int main()
             n[i+1]=a;
         }
     }
-   if(x=='ABC')
-
+   for(j=0;j<3;j++)
+    printf("%d",n[j]);
 
 
 
