@@ -1,4 +1,5 @@
 #include<iostream>
+#include<cmath>
 using namespace std;
 int main()
 {
@@ -12,8 +13,11 @@ int main()
             cout<<199;
         else
         {
-            x-=200;
+            x=N-200;
+            if(x%100==0)
             cout<<199+(x*3);
+            else
+                cout<<199+(x*3)+1;
         }
     }
     else if(n=='B')
@@ -22,8 +26,11 @@ int main()
             cout<<400;
         else
         {
-            x-=400;
-            cout<<199+(x*3);
+            x=N-400;
+            if(x%100==0)
+            cout<<299+(x*2);
+            else
+                cout<<299+(x*2)+1;
         }
     }
 }
