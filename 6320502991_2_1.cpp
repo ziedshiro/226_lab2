@@ -3,12 +3,8 @@ using namespace std;
 int main()
 {
     int a,b,c,x;
-    cin>>a;
-       cin>>b;
-          cin>>c;
+    cin>>a>>b>>c;
           x=a+b+c;
-          if((a>=0&&a<=30)&&(b>=0&&b<=30)&&(c>=0&&c<=40))
-          {
               if(x>=80&&x<=100)
                 cout<<"A";
               else if(x>=75&&x<=79)
@@ -25,7 +21,6 @@ int main()
                 cout<<"D";
                 else if(x>=0&&x<=49)
                 cout<<"F";
-          }
 
 
 
