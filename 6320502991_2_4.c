@@ -5,10 +5,12 @@ int main()
     int n;
     scanf("%c",&x);
     scanf("%d",&n);
-                if(x>='A'&&x<='I')
+    if((x>='A'&&x<='Z')&&(n>=1&&n<=31))
+    {
+                   if(x>='A'&&x<='I')
     {
         if(n%10==5)
-            printf("\\");
+            printf("%c",92);
             if(n%2==0)
             {
             printf("{@_@}");
@@ -51,6 +53,8 @@ int main()
         if(n%10==5)
             printf("/");
     }
+    }
+
 
 
 }
