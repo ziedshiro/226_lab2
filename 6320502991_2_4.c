@@ -5,7 +5,7 @@ int main()
     int n,z;
     scanf("%c",&x);
     scanf("%d",&n);
-    z=n;
+    z=x-n;
     if((x>='A'&&x<='Z')&&(n>=1&&n<=31))
     {
                    if(x>='A'&&x<='I')
